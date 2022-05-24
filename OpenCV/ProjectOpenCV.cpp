@@ -8,6 +8,11 @@
 #include <windows.h>
 #include <iostream>
 
+
+#include <iostream>
+#include <opencv2/opencv.hpp>
+
+
 using namespace sf;
 using namespace cv;
 using namespace std;
@@ -44,7 +49,7 @@ void paint_line(RenderWindow& window, vector<Vector2<int>>& arr) {
             sf::Vertex(sf::Vector2f(arr[i].x , arr[i].y))
         };
         line->color = Color::Black;
-        window.draw(line, 2, sf::Lines);
+        window.draw(line, 10, sf::Lines);
 
     }
 }
@@ -292,9 +297,80 @@ int go() {
     return 0;
 }
 
-int main(int argc, const char** argv) {
-    go();
+
+int mouseX;
+int mouseY;
+void on_Mouse(int event, int x, int y, int flags, void* param) {
+    if (event == 0)//鼠标移动将会触发此事件，CV_EVENT_MOUSEMOVE和0等效
+        cout << "x:" << x << "y：" << y << endl;//鼠标在图片每移动一次就会输出一次坐标
+    mouseX = x;
+    mouseY = y;
+    if (event == 1) {
+        flag = true;
+    }
+    if (event == 4) {
+        flag =  false;
+    }
+}
+
+int go2() {
+    Mat src = imread("C:\\Users\\hp\\Desktop\\1.png");
+    namedWindow("src");
+    setMouseCallback("src", on_Mouse);
+    imshow("src", src);
+    waitKey();
+    string name;
+    int pageCount = 0;
+
+    HANDLE hThread1 = CreateThread(NULL, 0, UDP_S1, NULL, 0, NULL);
+    CloseHandle(hThread1);
+
+    // Start the open_palm and eye detection phase
+    vector<cv::Rect> open_palms;
+    vector<cv::Rect> closed_palms;
+
+    while (1) {
+
+        double t0 = getTickCount();
+
+        string s;
+
+        if (closed_palms.size() != 0) {
+            Point closed_palm_rect_p1(mouseX, mouseY);
+            //Point closed_palm_rect_p2(closed_palms[0].x + closed_palms[0].width, closed_palms[0].y + closed_palms[0].height);
+
+            //rectangle(image_fliped, closed_palm_rect_p1, closed_palm_rect_p2, Scalar(0, 255, 0));
+            c_x = ((closed_palm_rect_p1.x + mouseX) >> 1) - 200;
+            c_y = ((closed_palm_rect_p1.y + mouseY) >> 1) - 200;
+            //s = "("; s.append(to_string(c_x)); s += ", "; s.append(to_string(c_y)); s += ")";
+            //putText(image_fliped, s, Point(10, 50), FONT_HERSHEY_SIMPLEX, 1, Scalar(0, 255, 0), 1, 5, false);
+
+            if (judge(200, 750, 200, 550)) {
+                if (show == 2)pos.push_back(Vector2<int>(c_x, c_y));
+                else if (show == 3)eraser_path.push_back(Vector2<int>(c_x, c_y));
+            }
+        }
+        else {
+            if (flag) {
+                flag = false;
+                isSave = true;
+            }
+            if (open_palms.size() != 0) {
+                Point open_palm_rect_p1(open_palms[0].x, open_palms[0].y);
+                Point open_palm_rect_p2(open_palms[0].x + open_palms[0].width, open_palms[0].y + open_palms[0].height);
+                c_x = ((open_palm_rect_p1.x + open_palm_rect_p2.x) >> 1) - 200;
+                c_y = ((open_palm_rect_p1.y + open_palm_rect_p2.y) >> 1) - 200;
+            }
+        }
+
+        waitKey(10);
+    }
     return 0;
+}
+
+int main(int argc, const char** argv) {
+  go2();
+  return 0;
 }
 
 

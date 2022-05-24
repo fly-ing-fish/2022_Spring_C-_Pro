@@ -146,7 +146,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="openCV.cpp" />
-    <ClCompile Include="ProjectOpenCV.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Xml Include="closed_palm.xml" />

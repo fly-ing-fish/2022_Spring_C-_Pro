@@ -1,26 +1,17 @@
-﻿  ProjectOpenCV.cpp
-G:\openCV\OpenCV\OpenCV\ProjectOpenCV.cpp(29,26): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-G:\openCV\OpenCV\OpenCV\ProjectOpenCV.cpp(33,44): warning C4244: “参数”: 从“T”转换到“float”，可能丢失数据
+﻿  openCV.cpp
+G:\openCV\OpenCV\OpenCV\openCV.cpp(30,26): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+G:\openCV\OpenCV\OpenCV\openCV.cpp(34,44): warning C4244: “参数”: 从“T”转换到“float”，可能丢失数据
           with
           [
               T=int
           ]
-G:\openCV\OpenCV\OpenCV\ProjectOpenCV.cpp(33,34): warning C4244: “参数”: 从“T”转换到“float”，可能丢失数据
+G:\openCV\OpenCV\OpenCV\openCV.cpp(34,34): warning C4244: “参数”: 从“T”转换到“float”，可能丢失数据
           with
           [
               T=int
           ]
-G:\openCV\OpenCV\OpenCV\ProjectOpenCV.cpp(39,26): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-G:\openCV\OpenCV\OpenCV\ProjectOpenCV.cpp(43,61): warning C4244: “参数”: 从“T”转换到“T”，可能丢失数据
-          with
-          [
-              T=int
-          ]
-          and
-          [
-              T=float
-          ]
-G:\openCV\OpenCV\OpenCV\ProjectOpenCV.cpp(43,47): warning C4244: “参数”: 从“T”转换到“T”，可能丢失数据
+G:\openCV\OpenCV\OpenCV\openCV.cpp(40,26): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+G:\openCV\OpenCV\OpenCV\openCV.cpp(48,61): warning C4244: “参数”: 从“T”转换到“T”，可能丢失数据
           with
           [
               T=int
@@ -29,7 +20,7 @@ G:\openCV\OpenCV\OpenCV\ProjectOpenCV.cpp(43,47): warning C4244: “参数”: �
           [
               T=float
           ]
-G:\openCV\OpenCV\OpenCV\ProjectOpenCV.cpp(44,54): warning C4244: “参数”: 从“T”转换到“T”，可能丢失数据
+G:\openCV\OpenCV\OpenCV\openCV.cpp(48,47): warning C4244: “参数”: 从“T”转换到“T”，可能丢失数据
           with
           [
               T=int
@@ -38,7 +29,7 @@ G:\openCV\OpenCV\OpenCV\ProjectOpenCV.cpp(44,54): warning C4244: “参数”: �
           [
               T=float
           ]
-G:\openCV\OpenCV\OpenCV\ProjectOpenCV.cpp(44,43): warning C4244: “参数”: 从“T”转换到“T”，可能丢失数据
+G:\openCV\OpenCV\OpenCV\openCV.cpp(49,54): warning C4244: “参数”: 从“T”转换到“T”，可能丢失数据
           with
           [
               T=int
@@ -47,28 +38,107 @@ G:\openCV\OpenCV\OpenCV\ProjectOpenCV.cpp(44,43): warning C4244: “参数”: �
           [
               T=float
           ]
-G:\openCV\OpenCV\OpenCV\ProjectOpenCV.cpp(75,44): warning C4244: “参数”: 从“T”转换到“float”，可能丢失数据
+G:\openCV\OpenCV\OpenCV\openCV.cpp(49,43): warning C4244: “参数”: 从“T”转换到“T”，可能丢失数据
           with
           [
               T=int
           ]
-G:\openCV\OpenCV\OpenCV\ProjectOpenCV.cpp(75,34): warning C4244: “参数”: 从“T”转换到“float”，可能丢失数据
+          and
+          [
+              T=float
+          ]
+G:\openCV\OpenCV\OpenCV\openCV.cpp(50,62): warning C4244: “参数”: 从“int”转换到“T”，可能丢失数据
+          with
+          [
+              T=float
+          ]
+G:\openCV\OpenCV\OpenCV\openCV.cpp(50,43): warning C4244: “参数”: 从“T”转换到“T”，可能丢失数据
           with
           [
               T=int
           ]
-G:\openCV\OpenCV\OpenCV\ProjectOpenCV.cpp(104,32): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
-G:\openCV\OpenCV\OpenCV\ProjectOpenCV.cpp(111,32): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
-G:\openCV\OpenCV\OpenCV\ProjectOpenCV.cpp(145,22): warning C4305: “参数”: 从“double”到“float”截断
-G:\openCV\OpenCV\OpenCV\ProjectOpenCV.cpp(146,22): warning C4305: “参数”: 从“double”到“float”截断
-G:\openCV\OpenCV\OpenCV\ProjectOpenCV.cpp(146,42): warning C4305: “参数”: 从“double”到“float”截断
-G:\openCV\OpenCV\OpenCV\ProjectOpenCV.cpp(147,22): warning C4305: “参数”: 从“double”到“float”截断
-G:\openCV\OpenCV\OpenCV\ProjectOpenCV.cpp(147,40): warning C4305: “参数”: 从“double”到“float”截断
-G:\openCV\OpenCV\OpenCV\ProjectOpenCV.cpp(148,22): warning C4305: “参数”: 从“double”到“float”截断
-G:\openCV\OpenCV\OpenCV\ProjectOpenCV.cpp(148,42): warning C4305: “参数”: 从“double”到“float”截断
-G:\openCV\OpenCV\OpenCV\ProjectOpenCV.cpp(149,22): warning C4305: “参数”: 从“double”到“float”截断
-G:\openCV\OpenCV\OpenCV\ProjectOpenCV.cpp(149,44): warning C4305: “参数”: 从“double”到“float”截断
-G:\openCV\OpenCV\OpenCV\ProjectOpenCV.cpp(168,33): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
-G:\openCV\OpenCV\OpenCV\ProjectOpenCV.cpp(168,28): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
-G:\openCV\OpenCV\OpenCV\ProjectOpenCV.cpp(236,19): warning C4244: “初始化”: 从“int64”转换到“double”，可能丢失数据
+          and
+          [
+              T=float
+          ]
+G:\openCV\OpenCV\OpenCV\openCV.cpp(51,65): warning C4244: “参数”: 从“int”转换到“T”，可能丢失数据
+          with
+          [
+              T=float
+          ]
+G:\openCV\OpenCV\OpenCV\openCV.cpp(51,47): warning C4244: “参数”: 从“T”转换到“T”，可能丢失数据
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+G:\openCV\OpenCV\OpenCV\openCV.cpp(94,44): warning C4244: “参数”: 从“T”转换到“float”，可能丢失数据
+          with
+          [
+              T=int
+          ]
+G:\openCV\OpenCV\OpenCV\openCV.cpp(94,34): warning C4244: “参数”: 从“T”转换到“float”，可能丢失数据
+          with
+          [
+              T=int
+          ]
+G:\openCV\OpenCV\OpenCV\openCV.cpp(123,32): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+G:\openCV\OpenCV\OpenCV\openCV.cpp(130,32): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+G:\openCV\OpenCV\OpenCV\openCV.cpp(165,22): warning C4305: “参数”: 从“double”到“float”截断
+G:\openCV\OpenCV\OpenCV\openCV.cpp(166,22): warning C4305: “参数”: 从“double”到“float”截断
+G:\openCV\OpenCV\OpenCV\openCV.cpp(166,42): warning C4305: “参数”: 从“double”到“float”截断
+G:\openCV\OpenCV\OpenCV\openCV.cpp(167,22): warning C4305: “参数”: 从“double”到“float”截断
+G:\openCV\OpenCV\OpenCV\openCV.cpp(167,40): warning C4305: “参数”: 从“double”到“float”截断
+G:\openCV\OpenCV\OpenCV\openCV.cpp(168,22): warning C4305: “参数”: 从“double”到“float”截断
+G:\openCV\OpenCV\OpenCV\openCV.cpp(168,42): warning C4305: “参数”: 从“double”到“float”截断
+G:\openCV\OpenCV\OpenCV\openCV.cpp(169,22): warning C4305: “参数”: 从“double”到“float”截断
+G:\openCV\OpenCV\OpenCV\openCV.cpp(169,44): warning C4305: “参数”: 从“double”到“float”截断
+G:\openCV\OpenCV\OpenCV\openCV.cpp(189,33): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+G:\openCV\OpenCV\OpenCV\openCV.cpp(189,28): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+G:\openCV\OpenCV\OpenCV\openCV.cpp(258,19): warning C4244: “初始化”: 从“int64”转换到“double”，可能丢失数据
+G:\openCV\OpenCV\OpenCV\openCV.cpp(326,46): warning C4244: “参数”: 从“float”转换到“unsigned int”，可能丢失数据
+G:\openCV\OpenCV\OpenCV\openCV.cpp(326,35): warning C4244: “参数”: 从“float”转换到“unsigned int”，可能丢失数据
+G:\openCV\OpenCV\OpenCV\openCV.cpp(336,47): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+G:\openCV\OpenCV\OpenCV\openCV.cpp(336,24): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+G:\openCV\OpenCV\OpenCV\openCV.cpp(337,47): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+G:\openCV\OpenCV\OpenCV\openCV.cpp(337,24): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+G:\openCV\OpenCV\OpenCV\openCV.cpp(338,48): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+G:\openCV\OpenCV\OpenCV\openCV.cpp(338,25): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+G:\openCV\OpenCV\OpenCV\openCV.cpp(339,47): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+G:\openCV\OpenCV\OpenCV\openCV.cpp(339,24): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+G:\openCV\OpenCV\OpenCV\openCV.cpp(340,47): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+G:\openCV\OpenCV\OpenCV\openCV.cpp(340,24): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+G:\openCV\OpenCV\OpenCV\openCV.cpp(341,48): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+G:\openCV\OpenCV\OpenCV\openCV.cpp(341,25): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+G:\openCV\OpenCV\OpenCV\openCV.cpp(342,48): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+G:\openCV\OpenCV\OpenCV\openCV.cpp(342,25): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+G:\openCV\OpenCV\OpenCV\openCV.cpp(343,45): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+G:\openCV\OpenCV\OpenCV\openCV.cpp(344,48): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+G:\openCV\OpenCV\OpenCV\openCV.cpp(344,25): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+G:\openCV\OpenCV\OpenCV\openCV.cpp(345,22): warning C4305: “参数”: 从“double”到“float”截断
+G:\openCV\OpenCV\OpenCV\openCV.cpp(346,22): warning C4305: “参数”: 从“double”到“float”截断
+G:\openCV\OpenCV\OpenCV\openCV.cpp(346,42): warning C4305: “参数”: 从“double”到“float”截断
+G:\openCV\OpenCV\OpenCV\openCV.cpp(347,22): warning C4305: “参数”: 从“double”到“float”截断
+G:\openCV\OpenCV\OpenCV\openCV.cpp(347,40): warning C4305: “参数”: 从“double”到“float”截断
+G:\openCV\OpenCV\OpenCV\openCV.cpp(348,22): warning C4305: “参数”: 从“double”到“float”截断
+G:\openCV\OpenCV\OpenCV\openCV.cpp(348,42): warning C4305: “参数”: 从“double”到“float”截断
+G:\openCV\OpenCV\OpenCV\openCV.cpp(349,22): warning C4305: “参数”: 从“double”到“float”截断
+G:\openCV\OpenCV\OpenCV\openCV.cpp(349,44): warning C4305: “参数”: 从“double”到“float”截断
+G:\openCV\OpenCV\OpenCV\openCV.cpp(351,71): warning C4244: “参数”: 从“double”转换到“T”，可能丢失数据
+          with
+          [
+              T=float
+          ]
+G:\openCV\OpenCV\OpenCV\openCV.cpp(351,56): warning C4244: “参数”: 从“double”转换到“T”，可能丢失数据
+          with
+          [
+              T=float
+          ]
+G:\openCV\OpenCV\OpenCV\openCV.cpp(352,50): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+G:\openCV\OpenCV\OpenCV\openCV.cpp(352,32): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+G:\openCV\OpenCV\OpenCV\openCV.cpp(377,33): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+G:\openCV\OpenCV\OpenCV\openCV.cpp(377,28): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
   OpenCV.vcxproj -> G:\openCV\OpenCV\x64\Debug\OpenCV.exe
